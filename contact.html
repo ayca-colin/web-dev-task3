@@ -18,11 +18,20 @@
         </nav>
     </header>
     <main>
-        <h2>Office Hours and Service Area</h2>
-        <p><strong>Service Area:</strong> Twin Cities and surrounding counties.</p>
-        <p><strong>Office Hours:</strong> Monday to Friday: 9:00 AM - 5:00 PM, Saturday: 10:00 AM - 4:00 PM</p>
+        <h2>Interactive Preference Tracker</h2>
+        <p>Select your primary area of interest to save your preference in your browser:</p>
+        <button type="button" onclick="savePreference('Dogs')">Interest: Dogs</button>
+        <button type="button" onclick="savePreference('Cats')">Interest: Cats</button>
+        <button type="button" onclick="savePreference('Small Animals')">Interest: Small Animals</button>
+        <p id="preference-display" style="font-weight: bold; margin-top: 10px; color: #6B3E26;">No interest saved yet.</p>
+
+        <hr style="margin: 30px 0;">
+
         <h2>Get Involved</h2>
         <p>Want to help? Please fill out the form below and we will contact you soon!</p>
+        
+        <p id="form-error"></p>
+
         <form action="#" method="POST">
             <fieldset>
                 <legend>Volunteer or Foster Interest Form</legend>
@@ -61,5 +70,6 @@
     <footer>
         <p>&copy; 2026 Twin Cities Animal Rescue</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
